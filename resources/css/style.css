@@ -1,0 +1,300 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+html{
+    background-color: aliceblue;
+    color: #463052;
+    font-family: 'Lato', 'Arial', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    text-rendering: optimizeLegibility;
+}
+.row{
+    max-width: 1140px;
+    margin: 0 auto;
+   
+}
+
+header{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.870), rgba(0, 0, 0, 0.603)), url(img/hero.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    background-attachment: fixed;
+}
+.logo{
+    border-radius: 50%;
+}
+.hero-text-box{
+    position: absolute;
+    width: 1140px;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.dropdown-content{
+    display: none;
+    position: absolute;
+}
+.dropdown-content a {
+    padding-top: 5%; ;
+    display: block;
+    text-align: left;
+}
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+h1, h2, h3{
+
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center;
+}
+h1{
+   
+    margin: 0;
+    color: aliceblue;
+    font-size: 200%;
+    word-spacing: 3px;
+}
+h2{
+    
+    font-size: 170%;
+    word-spacing: 1px;
+    margin: 20px;
+}
+
+h2::after{
+   display: block;
+   height: 2px;
+   background-color: #d35400;
+   content: " "; 
+   width: 50%;
+   margin: 0 auto;
+   margin-top: 20px;
+}
+.long-copy{
+    width: 70%;
+    margin-left: 15%;
+}
+.box p{
+    font-size: 85%;
+    line-height: 140%;
+    text-align: center;
+}
+.box img{
+    width: 100%;
+    height: 300px;
+}
+.shop-icon{
+    text-align: center;
+    display: block;
+    margin: 10px;
+}
+.shop-icon:hover{
+    color: #823400;
+    font-size: 125%;
+    transition: color 0.2s, font-size 0.2s;
+}
+.big-icon{
+    display: block;
+    font-size: 250%;
+    color: #d35400;
+    text-align: center;
+}
+.btn:link,
+.btn:visited,
+input[type=submit]{
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: 300;
+    text-decoration: none;
+    border-radius: 50%;
+    color: white;
+    transition: background-color 0.2s, border 0.2s, color 0.2s;
+}
+.btn:hover,
+.btn:active,
+input[type=submit]:hover,
+input[type=submit]:active{
+    background-color: #823400;
+
+}
+.btn-full:link,
+.btn-full:visited,
+input[type=submit]
+{
+    background-color: #d35400;
+    border: 1px solid #d35400;
+}
+.btn-ghost:link,
+.btn-ghost:visited{
+    border: 1px solid #d35400;
+}
+.logo{
+    height: 150px;
+    width: auto;
+    float: left;
+
+}
+.main-nav{
+    float: right;
+    list-style: none;
+    margin-top: 60px;
+}
+.main-nav li{
+    display: inline-block;
+}
+.main-nav li a:link,
+.main-nav li a:visited{
+    padding: 5px;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.2s;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active{
+    border-bottom: 2px solid #d35400;
+}   
+section{
+    padding: 80px 8;
+}
+.meals-show{
+    list-style: none;
+    width: 100%;
+
+}
+.meals-show li{
+    display: block;
+    float: left;
+    width: 25%;
+}
+.meal-photo{
+    margin: 0;
+    width: 100%;
+    background-color: white;
+    overflow: hidden;
+}
+.meal-photo img{
+    width: 100%;
+   
+    
+}
+.meal-photo img:hover{
+    opacity: 0.85;
+    transform: scale(1.2);
+    transition: transform 0.7s, opacity 0.7s;
+}
+.row p{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.section-testimonials{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.603), rgba(0, 0, 0, 0.603)), url(img/back-customers.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    color: aliceblue;
+    font-family: 'Nanum Brush Script', 'Italic', cursive;
+}
+.section-testimonials h2{
+    font-family: 'Lato', 'Arial', sans-serif;
+}
+.section-testimonials blockquote{
+font-size: 120%;
+}
+.section-testimonials img{
+    width: 75%;
+    height: 180px;
+    border-radius: 50%;
+    
+}
+/*.section-testimonials  .kartalos-img{
+    transform: rotate(90deg);
+    width: 50%;
+    margin-top: 10px;
+}*/
+.section-testimonials cite{
+    display: block;
+}
+.contact-form{
+    width: 50%;
+    margin: 0 auto;
+}
+.menu-list li {
+    list-style: none;
+    margin-top: 10px;
+}
+.menu-list li .menu-img{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-size: cover;
+}
+.menu-list li .dish-entry, .menu-list li .dish-text{
+    display: table-cell;
+    vertical-align: top;
+}
+.menu-list li .dish-text{
+    padding-left: 5%;
+}
+.menu-list li .dish-text:hover {
+    padding-left: 10%;
+    transition: all 0.5s;
+}
+.dish-text .price{
+    margin-left: 50%;
+}
+#menu h3,#chef h3,#pagrati-location h3, .price{
+    color: #d35400;
+}
+ #chef-info{
+    margin-top: 30%;
+}
+#location-info{
+    margin-top: 10%;
+}
+
+input[type=text],
+input[type=email],
+select,
+textarea{
+    width: 100%;
+    border-radius: 5%;
+    border: 1px solid #463052;
+}
+footer{
+    background-color: #463052;
+    padding-top: 10px;
+    
+}
+footer ul{
+   list-style: none;
+   padding-top: 30px;
+}
+footer li{
+    /*float: left;*/
+    display: inline-block;
+    margin: 0 20px;
+    font-size: 150%;
+}
+footer p,a,img{
+    /*color: #d35400;*/
+    color: white;
+    margin-top: 10px;
+    text-decoration: none;
+}
+footer li a:hover,
+footer li a:active{
+    /*color: #823400;*/
+    color: #d35400;
+    padding-left: 10%;
+    transition: color 0.5s, padding-left 0.5s;
+}
